@@ -1,0 +1,80 @@
+:root {
+  --cols: 40;
+}
+
+body {
+  background-color: #768593;
+  padding-top: 20px;
+  color: #ddd;
+}
+
+.header {
+  color: #fafafa;
+  text-align: center;
+}
+
+#grid {
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 10px 7px 4px 7px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  width: 800px;
+  grid-auto-rows: 20px;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  margin: 0 auto;
+}
+
+.switch {
+  width: 10px;
+}
+
+.controls {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.btn-secondary, .btn-secondary:visited {
+  background-color: #dfdfdf;
+  color: #888
+}
+
+.btn-secondary:hover {
+  background-color: #a0a0a0;
+}
+
+.btn-secondary:active {
+  background-color: #909090;
+}
+
+.difficulty {
+  margin-bottom: 10px;
+}
+
+.difficulty > input {
+  margin-left: 10px;
+}
+
+.score {
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .checkbox {
+    width: 5px
+  }
+  #grid {
+    width: 500px;
+    grid-auto-rows: 12.5px;
+    padding: 5px 10px 7px 5px;
+  }
+  
+}
